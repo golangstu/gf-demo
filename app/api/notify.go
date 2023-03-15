@@ -13,3 +13,7 @@ var Notify = notifyApi{}
 func (*notifyApi) Index(request *ghttp.Request) {
 	response.JsonExit(request, 0, "success", nil)
 }
+
+func (*notifyApi) Error(request *ghttp.Request) {
+	response.JsonExit(request, 1, "Error", nil)
+}
